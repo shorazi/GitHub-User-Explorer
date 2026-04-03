@@ -1,4 +1,4 @@
-import type { GitHubRepo } from '../services/userProfile'
+import type { GitHubRepo } from '../../services/userProfile'
 
 export default function RepositoryCard({ repo }: { repo: GitHubRepo }) {
 	return (
