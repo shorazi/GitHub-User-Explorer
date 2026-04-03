@@ -1,4 +1,4 @@
-import { UserCardSkeleton } from '../../pages/SearchPage/SearchPage'
+import UserCardSkeleton from '../UserCardSkeleton'
 
 export default function UserGridSkeleton() {
 	return (
