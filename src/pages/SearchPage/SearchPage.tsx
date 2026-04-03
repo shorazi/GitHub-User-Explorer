@@ -1,5 +1,11 @@
-const SearchPage = () => {
-	return <div>SearchPage</div>
-}
+import SearchInput from '../../components/SearchInput'
+import UserGrid from '../../components/UserGrid'
 
-export default SearchPage
+export default function SearchPage() {
+	return (
+		<div>
+			<SearchInput />
+			<UserGrid />
+		</div>
+	)
+}
