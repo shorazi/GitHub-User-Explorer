@@ -1,8 +1,8 @@
-import { fetchGitHub } from '../../lib'
+import { apiRoutes, fetchGitHub } from '../../lib'
 import type { GitHubRepo, GitHubUserDetail } from './types'
 
 export const getUserDetailApi = (username: string) =>
-	fetchGitHub<GitHubUserDetail>(`/users/${username}`)
+	fetchGitHub<GitHubUserDetail>(apiRoutes.users.detail(username))
 
 export const getUserReposApi = (username: string) =>
-	fetchGitHub<GitHubRepo[]>(`/users/${username}/repos?per_page=100&sort=pushed`)
+	fetchGitHub<GitHubRepo[]>(apiRoutes.users.repos(username))
